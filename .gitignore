@@ -1,1 +1,6 @@
 /.DS_Store
+target
+profiles.yml
+models/_sources
+.user.yml
+logs

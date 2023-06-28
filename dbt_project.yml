@@ -9,6 +9,11 @@ config-version: 2
 # This setting configures which "profile" dbt uses for this project.
 profile: 'demo'
 
+quoting:
+  database: true
+  schema: true
+  identifier: true
+
 # These configurations specify where dbt should look for different types of files.
 # The `model-paths` config, for example, states that models in this project can be
 # found in the "models/" directory. You probably won't need to change these!
@@ -24,14 +29,3 @@ clean-targets:
   - "target"
   - "dbt_packages"
 
-
-sources:
-  demo:
-    olist_customers_dataset:
-    olist_geolocation_dataset:
-    olist_order_items_dataset:
-    olist_order_payments_dataset:
-    olist_order_reviews_dataset:
-    olist_orders_dataset:
-    olist_products_dataset:
-    olist_sellers_dataset:
