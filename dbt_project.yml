@@ -24,16 +24,4 @@ clean-targets:
   - "target"
   - "dbt_packages"
 
-models:
-  olap:
-    staging:
-      staging:
-        +tags:
-        - "staging"
-      intermediate:
-        +tags:
-        - "intermediate"
-      marts:
-        +tags:
-        - "marts"
 
