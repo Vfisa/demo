@@ -1,1 +1,1 @@
-SELECT * FROM {{ source('STAGING', 'olist_order_payments_dataset') }}
+SELECT * FROM {{ source('out.c-download-file', 'olist_order_payments_dataset') }}
